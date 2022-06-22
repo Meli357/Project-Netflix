@@ -236,7 +236,7 @@ footer{
     width: 100%;
     bottom: 0px;
     left:0px;
-    height:380px;
+    height:370px;
 }
 
 .foot-ers{
@@ -248,13 +248,13 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+	padding-left:15px;
 }
   
  .fcolumn{
     flex-basis:200px;
     flex-grow: 1;
     justify-content: center;
-     padding-left: 20px;
 }
  
 .top-text, #bottom-text{
