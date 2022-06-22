@@ -1,3 +1,65 @@
+
+footer{
+    background-color:black;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    bottom: 0px;
+    left:0px;
+    position: fixed;
+}
+
+.foot-ers{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.fcolumn{
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: center;
+}
+ 
+.top-text, #bottom-text{
+    color: gray;
+}
+
+div a{
+    text-decoration: none;
+    color:gray;
+}
+
+.fcolumn li{
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+#dropdown-foot{
+    background-color: black;
+    color: gray;
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bot-text{
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.top-text{
+    margin-left: 40px;
+}
+
 /*inizio contenitore-3-4*/
 
 @import url(https://font.gooova.com/fonts/14200/netflix-sans-font.html);
@@ -88,3 +150,4 @@ img{
 }
 
 /*fine contenitore-3-4*/
+
