@@ -236,7 +236,7 @@ footer{
     width: 100%;
     bottom: 0px;
     left:0px;
-    height:400px;
+    height:380px;
 }
 
 .foot-ers{
@@ -254,7 +254,7 @@ footer{
     flex-basis:200px;
     flex-grow: 1;
     justify-content: center;
-     padding-left: 10px;
+     padding-left: 20px;
 }
  
 .top-text, #bottom-text{
