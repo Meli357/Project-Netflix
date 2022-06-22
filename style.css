@@ -237,7 +237,6 @@ footer{
     bottom: 0px;
     left:0px;
     height:420px;
-
 }
 
 .foot-ers{
@@ -252,7 +251,7 @@ footer{
 }
   
  .fcolumn{
-    flex-basis: 200px;
+    
     flex-grow: 1;
     justify-content: center;
 }
