@@ -55,10 +55,12 @@ div.file2 {
 
 
 footer{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     bottom: 0px;
     left:0px;
-    position: fixed;
+    height:420px;
 }
 
 .foot-ers{
@@ -79,12 +81,12 @@ footer{
 }
  
 .top-text, #bottom-text{
-
+   color:gray;
 }
 
-div a{
+footer a{
     text-decoration: none;
-
+    color:gray;
 }
 
 .fcolumn li{
@@ -93,23 +95,37 @@ div a{
     margin-top: 20px;
 }
 
-#dropdown-foot{
+footer select{
+    background-image: url( https://coothead.co.uk/images/world.png );
+	background-repeat: no-repeat;
+    background-size: 22px;
+    background-position:left;
+}
 
+#dropdown-foot{
+    background-color: black;
+    color:rgb(219, 216, 216);
     font-size: 15px;
     margin-left: 35px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
 .bot-text{
+    margin-top: 10px;
     margin-left: 35px;
     font-size: 13px;
 }
 
 .top-text{
+    margin-top: 60px;
     margin-left: 40px;
+}
+
+.foot-ers a:hover{
+    text-decoration: underline;
 }
 
 /*inizio contenitore-3-4*/
