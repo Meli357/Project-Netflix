@@ -113,7 +113,7 @@ li svg{
     flex-direction: row;
 }
 
-ul {
+section ul {
     list-style-type: none; /* Remove bullets */
     display:flex;
     flex-direction: column;
