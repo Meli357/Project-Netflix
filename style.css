@@ -185,6 +185,17 @@ footer{
     height:420px;
 
 }
+
+.foot-ers{
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
   
  .fcolumn{
     flex-basis: 200px;
