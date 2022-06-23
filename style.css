@@ -248,13 +248,16 @@ footer{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-	padding-left:15px;
+	
 }
   
  .fcolumn{
-    flex-basis:200px;
+    flex-basis: 200px;
     flex-grow: 1;
     justify-content: center;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
  
 .top-text, #bottom-text{
@@ -278,6 +281,7 @@ footer select{
 	background-repeat: no-repeat;
     background-size: 22px;
     background-position:left;
+    border-color:rgb(59, 59, 54);
 }
 
 #dropdown-foot{
@@ -292,7 +296,7 @@ footer select{
 }
 
 .bot-text{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 35px;
     font-size: 13px;
 }
