@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Netflix Sans;
+    src: url(Fonts/NetflixSansRegular.ttf);
+}
+.header-background {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    section {  
+      margin-top: 205px;
+        
+    }
+
+.globe-logo {
+    position: fixed;
+width: 14px;
+height: 14px;
+margin-left: 1127px;
+margin-top: 33px;
+
+
+}
+
+.Language {
+     width: 85px;
+     height: 35px;
+     position: relative;
+     text-align: right;
+     top: 20px;
+     left: 1120px;
+     color: white;
+     border-color: white;
+     background-color: transparent;
+}
+
+
+.accedi {
+    background-color: red;
+    color: white;
+    font-family: Netflix Sans;
+    width: 90px;
+    height: 39px;
+    position: relative;
+    top: 20px;
+    left: 1150px;
+    border-radius: 5px;
+
+}
+
+
+
+h1 {
+    font-family: Netflix Sans;
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    margin-bottom: -20px;
+    
+    
+}
+
+h4 {
+    font-family: Netflix Sans;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: -20px;
+    
+    
+}
+
+h6 {
+    font-family: Netflix Sans;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.input-email-section  {
+
+    text-align: center;
+    margin-top: -30px;
+    
+    
+    
+}
+
+.input-email {
+    
+    width: 470px;
+    height: 60px;     
+}
+
+
+
+.Inizia {
+
+    width: 155px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Netflix Sans;
+    color: white;
+    background-color:red;
+    
+    
+    }
+
+    div {
+        
+    }
