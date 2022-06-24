@@ -3,7 +3,7 @@
     src: url(Fonts/NetflixSansRegular.ttf);
 }
 .header-background {
-    background-image: url(../img/background.png);
+    background-image: url(Assets/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -111,10 +111,4 @@ h6 {
     font-family: Netflix Sans;
     color: white;
     background-color:red;
-    
-    
-    }
-
-    div {
-        
-    }
+}
