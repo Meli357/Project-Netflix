@@ -1,10 +1,12 @@
-* {
-    background: black;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+*{
+    font-family: 'Netflix Sans', 'Helvetica Neue', sans-serif;
     color: white;
-    
-}
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: black;
+    max-width: 100%;
 
 
 div.contenitore1, div.contenitore2 {   
@@ -50,3 +52,145 @@ div.immagine1 > video {
 div.file2 {
     flex-flow: row-reverse;
 }
+
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    left:0px;
+    position: fixed;
+}
+
+.foot-ers{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.fcolumn{
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: center;
+}
+ 
+.top-text, #bottom-text{
+
+}
+
+div a{
+    text-decoration: none;
+
+}
+
+.fcolumn li{
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+#dropdown-foot{
+
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bot-text{
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.top-text{
+    margin-left: 40px;
+}
+
+/*inizio contenitore-3-4*/
+
+@import url(https://font.gooova.com/fonts/14200/netflix-sans-font.html);
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.testo3{
+    padding: 0 3rem 0 0;
+}
+
+.testo4{
+    padding: 0 0 0 3rem;
+}
+
+.testo3, .testo4{
+    max-width: 52%;
+}
+
+.testo3 > h1,
+.testo4 > h1{
+    padding-bottom: 10px;
+    font-size: 3.125rem;
+    margin: 0 0 8px;
+    font-weight: 600;
+}
+
+.testo3 > h2,
+.testo4 > h2{
+    font-size: 1.625rem;
+    margin: 20px 0px;
+    font-weight: 400;
+}
+
+.contenitore3, .contenitore4{
+    display: flex;
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.file3, .file4{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.immagine3, .immagine4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.immagine3 > video{
+    position: absolute;
+    width: 350px;
+    margin: -80px 30px 60px 90px;
+}
+
+.immagine3> img{
+    background: transparent;
+    z-index: 1;
+}
+
+.immagine3{
+    max-width: 100%;
+    height: auto;
+}
+
+.file4{
+    flex-direction: row-reverse;
+}
+
+/*fine contenitore-3-4*/
+
