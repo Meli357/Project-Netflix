@@ -108,9 +108,9 @@ header h6 {
 }
 
 
-@import url(https://font.gooova.com/fonts/14200/netflix-sans-font.html);
+
 *{
-    font-family: 'Netflix Sans', 'Helvetica Neue', sans-serif;
+    
     color: white;
     padding: 0;
     margin: 0;
