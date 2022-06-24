@@ -3,14 +3,7 @@
     font-family: Netflix Sans;
     src: url(Fonts/NetflixSansRegular.ttf);
 }
-.header-background {
-    background-image: url(Assets/img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+
 
 
   header section {  
