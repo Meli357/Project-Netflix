@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Netflix Sans;
     src: url(Fonts/NetflixSansRegular.ttf);
@@ -12,7 +13,7 @@
     }
 
 
-    section {  
+  header section {  
       margin-top: 205px;
         
     }
@@ -55,7 +56,7 @@ margin-top: 33px;
 
 
 
-h1 {
+header h1 {
     font-family: Netflix Sans;
     font-size: 65px;
     color: white;
@@ -65,7 +66,7 @@ h1 {
     
 }
 
-h4 {
+header h4 {
     font-family: Netflix Sans;
     font-weight: lighter;
     font-size: 25px;
@@ -76,7 +77,7 @@ h4 {
     
 }
 
-h6 {
+header h6 {
     font-family: Netflix Sans;
     font-weight: lighter;
     font-size: 20px;
@@ -112,3 +113,321 @@ h6 {
     color: white;
     background-color:red;
 }
+
+
+@import url(https://font.gooova.com/fonts/14200/netflix-sans-font.html);
+*{
+    font-family: 'Netflix Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: black;
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.contenitore1, .contenitore2,
+.contenitore3, .contenitore4 {
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+.file1, 
+.file2,
+.file3,
+.file4{
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+}
+
+div.immagine1, div.immagine2 {
+    display: flex;
+    align-items: center;
+}
+
+.immagine3, .immagine4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.titoli,
+.titoli2,
+.testo3, 
+.testo4{
+    max-width: 52%;
+}
+
+#titolo1,
+#titolo2,
+.testo3 > h1,
+.testo4 > h1{
+    padding-bottom: 10px;
+    font-size: 3.125rem;
+    margin: 0 0 8px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.titoli,
+.testo3{
+    padding: 0 3rem 0 0;
+}
+
+.titoli2,
+.testo4{
+    padding: 0 0 0 3rem;
+}
+
+#sottotitolo1,
+#sottotitolo2,
+.testo3 > h2,
+.testo4 > h2{
+    font-size: 1.625rem;
+    margin: 20px 0px;
+    font-weight: 400;
+}
+
+.immagine1 > img,
+.immagine3 > img {
+    background: transparent;
+    z-index: 3;
+    max-width: 528px;
+    height: auto;
+}
+
+.immagine1 > video {
+    position: absolute;
+    width: 400px;
+    margin: -20px 40px 10px 70px
+}
+.immagine3 > video{
+    position: absolute;
+    width: 350px;
+    margin: -80px 35px 60px 85px;
+}
+
+.file2,
+.file4 {
+    flex-flow: row-reverse;
+}
+
+.faq-btn{
+    background-color: transparent;
+    font-size: 25px;
+    border: 0;
+    width: 800px;
+    padding: 22px;
+    text-align: left;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+h3{
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.section-custom{
+   
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;  /*cross axis for column  */
+    border-bottom: 8px solid #222;
+    padding: 75px 40px;
+    
+}
+
+.section-custom>*{
+    flex: 1 100%;
+}
+
+.div-faq{
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+
+.div-faq-list-item{
+    display: flex;
+    background-color:#2e2e2e;
+    margin: 4px;
+    justify-content:space-between;
+    align-items: center;  /*cross axis for row   */
+}
+
+
+li svg{
+    fill:transparent;
+    background-color: #2e2e2e;
+    margin-right: 8px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+section ul {
+    list-style-type: none; /* Remove bullets */
+    display:flex;
+    flex-direction: column;
+}
+
+.btn-email{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(220, 0, 0, 1);
+}
+
+.btn-email:hover{
+    background-color: rgba(255, 0, 0, 1);
+}
+.btn-email:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.form{
+      display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.form input{
+    width: 450px;
+    height: 65px;
+    
+    color:#333;
+    font-size: 24px;
+    background-color: #fff;
+}
+
+.form button{
+    width: 320px;
+    left: 20px;
+}
+
+@media  all and (max-width: 880px){
+    
+
+    .form{
+        flex-direction: column;
+        
+    }
+    .faq-btn {
+        width: 85vw;
+        margin-left: 8%;
+     } 
+};
+@media all and (max-width:460px){
+    .div-email{
+        width: 50%;
+    }
+    
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    bottom: 0px;
+    left:0px;
+    height:370px;
+}
+
+.foot-ers{
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+	
+}
+  
+ .fcolumn{
+    flex-basis: 200px;
+    flex-grow: 1;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+ 
+.top-text, #bottom-text{
+   color:gray;
+}
+
+footer a{
+    text-decoration: none;
+    color:gray;
+}
+  
+.fcolumn li{
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 20px;
+    list-style: none;
+}
+
+footer select{
+    background-image: url( https://coothead.co.uk/images/world.png );
+	background-repeat: no-repeat;
+    background-size: 22px;
+    background-position:left;
+    border-color:rgb(59, 59, 54);
+}
+
+#dropdown-foot{
+    background-color: black;
+    color:rgb(219, 216, 216);
+    font-size: 15px;
+    margin-left: 35px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.bot-text{
+    margin-top: 20px;
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.top-text{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.foot-ers a:hover{
+    text-decoration: underline;
+}
+
+
+ 
+
+
