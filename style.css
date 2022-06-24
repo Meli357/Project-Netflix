@@ -4,8 +4,12 @@
     src: url(Assets/CSS/Fonts/NetflixSansRegular.ttf);
 }
 
-
-
+section {  
+      margin-top: 205px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
 
         
     }
