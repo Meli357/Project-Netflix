@@ -637,17 +637,17 @@ footer select {
     
     .immagine3 > img {
         max-width: 100%;
-        min-width: 15em;
+        min-width: 25em;
         margin: 0;
         position: relative;
     }
 
     .immagine3 > video {
         max-width: 30%;
-        min-width: 9em;
+        min-width: 16em;
         position: absolute;
         margin: 0;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
     }
 
     .immagine4 {
