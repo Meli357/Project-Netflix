@@ -61,6 +61,11 @@ div.file2 {
     width: 800px;
     padding: 22px;
     text-align: left;
+    
+}
+.faq-btn, svg{
+    cursor: pointer;
+
 }
 
 h1{
@@ -118,15 +123,27 @@ ul {
     display:flex;
     flex-direction: column;
 }
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+i{
+    background-color: transparent;
+    margin-left: 20px;
+}
+
 
 .btn-email{
     border: 0;
     line-height: 2.5;
-    padding: 0 20px;
+    height: 65px;
     font-size: 25px;
     text-align: center;
     color: #fff;
     background-color: rgba(220, 0, 0, 1);
+    
 }
 
 .btn-email:hover{
@@ -137,29 +154,35 @@ ul {
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
+
 .form{
-      display: flex;
+    display: flex;
     margin: 10px;
     align-items: center;
+    justify-content: center;
 }
 
 .form input{
     width: 450px;
     height: 65px;
-    
     color:#333;
-    font-size: 24px;
+    font-size: 14px;
+    padding-left: 2%;
     background-color: #fff;
 }
 
 .form button{
-    width: 320px;
+    width: 170px;
     left: 20px;
 }
 
-@media  all and (max-width: 880px){
-    
 
+
+@media  all and (max-width: 880px){
+    .form input{
+        margin-bottom: 2%;
+    }
+    
     .form{
         flex-direction: column;
         
@@ -167,7 +190,15 @@ ul {
     .faq-btn {
         width: 85vw;
         margin-left: 8%;
-     } 
+    } 
+    .btn-email{
+        width: 45px;
+        font-size: 16px;
+        line-height: 1.5;
+        
+    }
+
+
 };
 @media all and (max-width:460px){
     .div-email{
