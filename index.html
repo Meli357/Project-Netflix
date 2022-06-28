@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +9,104 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
+   <header>
+      
+            <nav>
+                   <div class="nav-buttons">
+                <select name="Language" id="Language" class="Language">
+                    <optgroup>
+                        <option value="Italiano">Italiano</option>
+                        <option value="English">English</option>
+                    </optgroup>
+                </select> 
+                <button class="accedi">Accedi</button> 
+                </div>
+            </nav>
+            <section>
+                
+                <div class="header-box"> 
 
+        <h1>Film, serie TV e tanto altro. 
+            <br> Senza Limiti.
+        </h1>
+            <h4>Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h4>
+            <h6>Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h6>   
+            
+            <div class="input-email-section">
+                <input type="text" class="input-email" placeholder="Indirizzo email">
+                  <span>
+                <button class="Inizia">Inizia ></button>
+            </span>
+            </div>
+
+            </div>
+            
+        </section>
+
+        
     </header>
     <main>
         <section>
+           <div class="contenitore1">
+                    <div class="file1">
+                        <div class="titoli">
+                            <h1 id="titolo1">Goditi Netflix sulla tua TV.</h1>
+                            <h2 id="sottotitolo1">Guarda Netflix su smart TV, Playstation, Xbox, Chromecast, Apple TV, lettori Blu-ray e molti altri dispositivi.</h2>
+                        </div>
+                        <div class="immagine1">
+                            <img src="assets/tv.png" alt="schermo TV">
+                            <video id="video" src="assets/assets_video-tv-0819.m4v" autoplay loop muted></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenitore2">
+                    <div class="file2">
+                        <div class="titoli2">
+                            <h1 id="titolo2">Scarica le tue serie da guardare offline.</h1>
+                            <h2 id="sottotitolo2">Salva facilmente i tuoi preferiti così avrai sempre qualcosa da guardare.</h2>
+                        </div>
+                        <div class="immagine2">
+                            <img src="assets/mobile-0819.jpeg" alt="smartphone">
+                            <div class="box-gif">
+                                <img src="assets/boxshot.png" alt="strangerthings">
+                                <div class="box-text">
+                                    <strong>Stranger Things</strong>
+                                    <p>Download in corso...</p>                                    
+                                </div>
+                                <img class="gif" src="assets/download-icon.gif" alt="download">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        </section>
+            <div class="contenitore3">
+                <div class="file3">
+                    <div class="testo3">
+                        <h1>Guarda Netflix ovunque.</h1>
+                        <h2>Cellulare, tablet, laptop e TV: scegli tu cosa usare per guardare in streaming film e serie TV senza limiti e senza spendere di più.</h2>
+                    </div>
+                    <div class="immagine3">
+                        <img src="assets/device-pile.png" alt="">
+                        <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" autoplay loop muted></video>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenitore4">
+                <div class="file4">
+                    <div class="testo4"> 
+                        <h1>Crea profili per i bambini.</h1>
+                        <h2>I bambini scoprono nuove avventure in compagnia dei loro personaggi preferiti in uno spazio tutto loro già incluso nel tuo abbonamento.</h2>
+                    </div>
+                    <div class="immagine4">
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/kidsValueProp.png" alt="">
+                    </div>
+                </div>
+            </div>
+      </section>
+   
         <section class="section-custom">
             <h1>Domande Frequenti</h1>
 
@@ -107,7 +195,55 @@
         </section>
     </main>
     <footer>
-
+      <div class="foot-ers">
+             <p class="top-text">Domande? Chiama <a href="tel:800130364">800-130-364</a> </p>
+              <div class="content-footer">
+                <div class="fcolumn">
+                 <ul>
+                    <li><a href="#">Domande frequenti</a></li>
+                    <li><a href="#">Rapporti con gli investitori</a></li>
+                    <li><a href="#">Come guardare Netflix</a></li>
+                    <li><a href="#">Informazioni sull'azienda</a></li>
+                    <li><a href="#">Note legali</a></li>
+                 </ul>
+                </div>
+                <div class="fcolumn">
+                 <ul>
+                    <li><a href="#">Centro assistenza</a></li>
+                    <li><a href="#">Opportunità di lavoro</a></li>
+                    <li><a href="#">Condizioni di utilizzo</a></li>
+                    <li><a href="#">Contattaci</a></li>
+                    <li><a href="#">Solo su Netflix</a></li>
+                 </ul>
+                </div>
+                <div class="fcolumn">
+                 <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Riscatta carte regalo</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Test di velocità</a></li>
+                 </ul>
+                </div>
+                <div class="fcolumn">
+                 <ul>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Acquista carte regalo</a></li>
+                    <li><a href="#">Preferenze per i cookie</a></li>
+                    <li><a href="#">Garanzia legale</a></li>
+                 </ul>
+                </div>
+              </div>
+             <div class="opt-foot">
+                <select id="dropdown-foot">
+                    <option value="IT">Italiano</option>
+                    <option value="EN">English</option>
+              </select>
+             </div>
+             <br/>
+             <div class="bot-text">
+                <span id="bottom-text">Netflix Italia</span>
+            </div>
+        </div>
     </footer>
 </body>
 

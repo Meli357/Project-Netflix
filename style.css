@@ -1,60 +1,326 @@
-@import url(https://font.gooova.com/fonts/14200/netflix-sans-font.html);
-*{
-    font-family: 'Netflix Sans', 'Helvetica Neue', sans-serif;
+@font-face {
+    font-family: Netflix Sans;
+    src: url(assets/Fonts/CSS/NetflixSansRegular.ttf);
+}
+
+
+
+
+header {
+    background-image: url(assets/img/NETFLIX\ BACKGROUND.png);
+    background-size: cover;
+    padding: 30px;
+    border-bottom: 8px solid #222;
+   
+    
+}
+
+.header-box {
+    width: 100%;
+    height: 650px;
+    padding: 100px;
+    display: block;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    float: right;
+    align-items: center;    
+}
+
+
+
+ .Language {
+    background-color: black;
+    width: 95px;
+    height: 39px;
+    text-align: right;
+    background-image: url( https://coothead.co.uk/images/world.png );
+    background-repeat: no-repeat;
+    background-position: 8%;
+    background-size: 13px;
+    border-color:rgb(59, 59, 54);
+
+
+ }
+
+
+.Inizia:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+
+
+
+.accedi {
+    background-color: rgba(220, 0, 0, 1);
     color: white;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: black;
+    font-family: Netflix Sans;
+    width: 90px;
+    height: 39px;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+
+h1 {
+    margin-top: 100px;
+    font-family: Netflix Sans;
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    
+    
+    
+    
+}
+
+h4 {
+    font-family: Netflix Sans;
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    
+    
+    
+}
+
+h6 {
+    font-family: Netflix Sans;
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+.input-email-section  {
+    
+    padding: 25px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.input-email {
+    
+    width: 450px;
+    height: 65px;  
+    color:#333;
+    border: none;
+}
+
+
+
+.Inizia {
+
+    width: 160px;
+    height: 65px;
+    font-size: 28px;
+    font-weight: lighter;
+    font-family: Netflix Sans;
+    color:#333;
+    color: white;
+    background-color:rgba(220, 0, 0, 1);
+    border: none;
+}
+
+
+header {
     max-width: 100%;
 }
 
-div.contenitore1, div.contenitore2 {   
+@media all and (max-width: 880px) and (min-width: 300px) {
+    .header-box {
+        display: inline;  
+    }
+
+}
+
+
+* {
+    font-family: Netflix Sans;
+    src: url(Assets/CSS/Fonts/NetflixSansRegular.ttf);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+
+    max-width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenitore1,
+.contenitore2,
+.contenitore3,
+.contenitore4 {
     border-bottom: 8px solid #222;
     padding: 70px 45px;
-}
-
-div.file1, div.file2 {
-    width: 1100px;
     display: flex;
-    align-items: center;    
-    margin: auto;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
-div.immagine1, div.immagine2 {
+
+.file1,
+.file2,
+.file3,
+.file4 {
     display: flex;
     align-items: center;
+    max-width: 1100px;
 }
 
-#titolo1,#titolo2 {
-    font-size: 3.125rem;    
+div.immagine1,
+div.immagine2 {
+    display: flex;
+    align-items: center;
+    min-width: 25em;
+}
+
+.immagine1 {
+    position: relative;
+}
+
+.immagine2 {
+    flex-wrap: wrap;
+    position: relative;    
+}
+
+.immagine3,
+.immagine4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.titoli,
+.titoli2,
+.testo3,
+.testo4 {
+    max-width: 52%;
+    min-width: 15em;
+}
+
+#titolo1,
+#titolo2,
+.testo3>h1,
+.testo4>h1 {
+    padding-bottom: 10px;
+    font-size: 3.125rem;
+    margin: 0 0 8px;
+    font-weight: 600;
     line-height: 1.1;
-    margin-bottom: .5rem;
 }
 
-#sottotitolo1,#sottotitolo2 {
+.titoli,
+.testo3 {
+    padding: 0 3rem 0 0;
+}
+
+.titoli2,
+.testo4 {
+    padding: 0 0 0 3rem;
+}
+
+#sottotitolo1,
+#sottotitolo2,
+.testo3>h2,
+.testo4>h2 {
     font-size: 1.625rem;
+    margin: 20px 0px;
     font-weight: 400;
 }
 
-div.immagine1 > img {
-    background: transparent;
-    z-index: 1;
-}
-
-div.immagine1 > video {
-    display: flex;
+.box-gif {
     position: absolute;
-    width: 650px;
-    height: 260px;
+    border: 2px solid rgba(255, 255, 255, .25);
+    width: 60%;
+    border-radius: .75em;
+    background: #000;
+    height: 97px;
+    display: flex;
+    padding: .5em .75em;
+    margin: 0;
+    left: 20%;   
+    margin-top: 42%;
+    flex: 1;
+    min-width: 15em;
 }
 
-div.file2 {
+.box-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    font-size: 1em;    
+    justify-content: center;
+}
+
+.box-text>p {
+    color: #0071eb;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.gif {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    position: relative;
+    left: 10px;
+}
+
+.immagine1>img,
+.immagine3>img {
+    background: transparent;
+    z-index: 3;
+    max-width: 528px;
+    height: auto;
+}
+
+.immagine1>video {
+    position: absolute;
+    width: 400px;
+    margin: -20px 40px 10px 70px
+}
+
+.immagine3>video {
+    position: absolute;
+    width: 350px;
+    margin: -80px 35px 60px 85px;
+}
+
+.file2,
+.file4 {
     flex-flow: row-reverse;
 }
 
-
-.faq-btn{
+.faq-btn {
     background-color: transparent;
     font-size: 25px;
     border: 0;
@@ -68,59 +334,63 @@ div.file2 {
 
 }
 
-h1{
+.section-custom h1 {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
-h3{
+
+h3 {
     font-weight: 400;
     padding-bottom: 20px;
     text-align: center;
 }
 
 
-.section-custom{
-   
+.section-custom {
+
     display: flex;
     flex-direction: column;
-    
-    align-items: center;  /*cross axis for column  */
+
+    align-items: center;
+    /*cross axis for column  */
     border-bottom: 8px solid #222;
     padding: 75px 40px;
-    
+
 }
 
-.section-custom>*{
+.section-custom>* {
     flex: 1 100%;
 }
 
-.div-faq{
+.div-faq {
     padding-top: 40px;
     padding-bottom: 40px;
-   
+
 }
 
-.div-faq-list-item{
+.div-faq-list-item {
     display: flex;
-    background-color:#2e2e2e;
+    background-color: #2e2e2e;
     margin: 4px;
-    justify-content:space-between;
-    align-items: center;  /*cross axis for row   */
+    justify-content: space-between;
+    align-items: center;
+    /*cross axis for row   */
 }
 
 
-li svg{
-    fill:transparent;
+li svg {
+    fill: transparent;
     background-color: #2e2e2e;
     margin-right: 8px;
     justify-content: space-around;
     flex-direction: row;
 }
 
-ul {
-    list-style-type: none; /* Remove bullets */
-    display:flex;
+section ul {
+    list-style-type: none;
+    /* Remove bullets */
+    display: flex;
     flex-direction: column;
 }
 .btn{
@@ -135,7 +405,7 @@ i{
 }
 
 
-.btn-email{
+.btn-email {
     border: 0;
     line-height: 2.5;
     height: 65px;
@@ -146,23 +416,17 @@ i{
     
 }
 
-.btn-email:hover{
+.btn-email:hover {
     background-color: rgba(255, 0, 0, 1);
 }
+
 .btn-email:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 
-.form{
-    display: flex;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-.form input{
+.form input {
     width: 450px;
     height: 65px;
     color:#333;
@@ -170,85 +434,111 @@ i{
     padding-left: 2%;
     background-color: #fff;
 }
+    
+.form{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
-.form button{
-    width: 170px;
+.form button {
+    width: 320px;
     left: 20px;
 }
 
-
-
-@media  all and (max-width: 880px){
-    .form input{
+@media all and (max-width: 880px) {
+  .form input{
         margin-bottom: 2%;
     }
-    
-    .form{
+
+    .form {
         flex-direction: column;
-        
     }
+
     .faq-btn {
         width: 85vw;
         margin-left: 8%;
     } 
+    
     .btn-email{
         width: 45px;
         font-size: 16px;
-        line-height: 1.5;
-        
+        line-height: 1.5; 
     }
+}
 
-
-};
-@media all and (max-width:460px){
-    .div-email{
+@media all and (max-width:460px) {
+    .div-email {
         width: 50%;
     }
-    
+
 }
 
 
-footer{
+footer {
     background-color: black;
     width: 100%;
     bottom: 0px;
-    left:0px;
-    height:420px;
-
+    left: 0px;
+    height: 370px;
 }
-  
- .fcolumn{
-    flex-basis: 200px;
-    flex-grow: 1;
-    justify-content: center;
+
+.foot-ers {
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+    flex-wrap:wrap;
 }
  
-.top-text, #bottom-text{
-   color:gray;
+ .fcolumn{
+
+    flex-grow: 1;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-footer a{
-    text-decoration: none;
-    color:gray;
+.top-text,
+#bottom-text {
+    color: gray;
 }
-  
-.fcolumn li{
+
+footer a {
     text-decoration: none;
-    font-size: 13px;
+    color: gray;
+}
+
+.fcolumn li {
+    text-decoration: none;
     margin-top: 20px;
     list-style: none;
+}
+
+.fcolumn li a{
+    font-size:14px;
 }
 
 footer select{
     background-image: url( https://coothead.co.uk/images/world.png );
 	background-repeat: no-repeat;
-    background-size: 22px;
-    background-position:left;
+    background-size: 20px;
+    background-position:10% 55%;
+    
+
+    border-color:rgb(59, 59, 54);
 }
 
 #dropdown-foot{
-    background-color: black;
-    color:rgb(219, 216, 216);
+    background-color: rgb(0, 0, 0);
+    color:rgb(135, 131, 131);
     font-size: 15px;
     margin-left: 35px;
     margin-top: 20px;
@@ -258,7 +548,8 @@ footer select{
 }
 
 .bot-text{
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 20px;
     margin-left: 35px;
     font-size: 13px;
 }
@@ -268,95 +559,180 @@ footer select{
     margin-left: 40px;
 }
 
-.foot-ers a:hover{
+.foot-ers a:hover {
     text-decoration: underline;
 }
 
-/*inizio contenitore-3-4*/
+@media screen and (min-width: 550px) and (max-width: 949px) {
 
-@import url(https://font.gooova.com/fonts/14200/netflix-sans-font.html);
+    .contenitore1,
+    .contenitore2,
+    .contenitore3,
+    .contenitore4 {
+        max-width: 949px;
+        margin: auto;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
 
+    .file1,
+    .file2,
+    .file3,
+    .file4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-img{
-    max-width: 100%;
-    height: auto;
+    .immagine1 img,
+    .immagine2 img,
+    .immagine3 img,
+    .immagine4 img{
+        max-width: 467px;
+        max-height: auto;
+        position: relative;
+    }
+
+    .immagine1,
+    .immagine2,
+    .immagine3,
+    .immagine4 {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .immagine3 video{
+        width: 285px;
+        margin: -80px 96px 50px 85px;
+    }
+
+    .titoli,
+    .titoli2,
+    .testo3,
+    .testo4 {
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 -20px 0;
+        z-index: 4;
+    }
+
+    #titolo1,
+    #titolo2,
+    .testo3 h1,
+    .testo4 h1 {
+        font-size: 40px;
+        width: 100%;
+        padding: 0;
+    }
+
+    #sottotitolo1,
+    #sottotitolo2,
+    .testo3 h2,
+    .testo4 h2 {
+        font-size: 20px;
+        width: 100%;
+        margin: 15px 0 5px;
+    }
 }
 
-.testo3{
-    padding: 0 3rem 0 0;
-}
+@media screen  and (max-width: 550px) {
 
-.testo4{
-    padding: 0 0 0 3rem;
-}
+    .contenitore1,
+    .contenitore2,
+    .contenitore3,
+    .contenitore4 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: 100%;
+    }
 
-.testo3, .testo4{
-    max-width: 52%;
-}
+    .file1,
+    .file2,
+    .file3,
+    .file4 {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+    .immagine1,
+    .immagine2,
+    .immagine3,
+    .immagine4 {
+        max-width: 100%;
+        height: auto;
+    }
 
-.testo3 > h1,
-.testo4 > h1{
-    padding-bottom: 10px;
-    font-size: 3.125rem;
-    margin: 0 0 8px;
-    font-weight: 600;
-}
+    .immagine1 > img {
+        max-width: 100%;
+    }
 
-.testo3 > h2,
-.testo4 > h2{
-    font-size: 1.625rem;
-    margin: 20px 0px;
-    font-weight: 400;
-}
-
-.contenitore3, .contenitore4{
-    display: flex;
-    position: relative;
-    border-bottom: 8px solid #222;
-    padding: 70px 45px;
-    max-width: 100%;
-    margin: 0 auto;
-    justify-content: space-around
-  }
-  
-.file3, .file4{
-    display: flex;
-    align-items: center;
-    max-width: 1100px;
-}
-
-.immagine3, .immagine4{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 48%;
-}
-
-.immagine3 > video{
-    position: absolute;
-    width: 350px;
-    margin: -80px 30px 60px 90px;
-}
-
-.immagine3> img{
-    background: transparent;
-    z-index: 1;
-}
-
-.immagine3{
-    max-width: 100%;
-    height: auto;
-}
-
-.file4{
-    flex-direction: row-reverse;
-}
-
-/*fine contenitore-3-4*/
-
- 
-
-
-
-
+    .immagine1 > video {
+        position: absolute;
+        max-width: 70%;        
+        right: 15%;
+        margin: 0;
+        margin-bottom: 12px;
+    }
     
+    .immagine3 {
+        justify-content: center;
+    }
+    
+    .immagine3 > img {
+        max-width: 100%;
+        min-width: 25em;
+        margin: 0;
+        position: relative;
+    }
+
+    .immagine3 > video {
+        max-width: 30%;
+        min-width: 16em;
+        position: absolute;
+        margin: 0;
+        margin-bottom: 90px;
+    }
+
+    .immagine4 {
+        justify-content: center;
+    }
+    
+    .immagine4 > img {
+        min-width: 15em;
+    }
+
+    .titoli,
+    .titoli2,
+    .testo3,
+    .testo4 {
+        max-width: 100%;
+        text-align: center;        
+        padding: 0;
+    }
+    
+    #titolo1,
+    #titolo2,
+    .testo3 > h1,
+    .testo4 > h1 {
+        font-size: 25px;
+        width: 100%;  
+    }
+
+    #sottotitolo1,
+    #sottotitolo2,
+    .testo3 h2,
+    .testo4 h2 {
+        font-size: 20px;
+        width: 100%;
+    }
+
+}
+
