@@ -275,6 +275,14 @@ div.immagine2 {
     font-size: .9em;
 }
 
+.gif {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    position: relative;
+    left: 10px;
+}
+
 .immagine1>img,
 .immagine3>img {
     background: transparent;
