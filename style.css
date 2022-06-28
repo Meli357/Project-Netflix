@@ -419,10 +419,14 @@ footer a{
   
 .fcolumn li{
     text-decoration: none;
-    font-size: 13px;
     margin-top: 20px;
     list-style: none;
 }
+
+.fcolumn li a{
+    font-size:14px;
+}
+
 
 footer select{
     background-image: url( https://coothead.co.uk/images/world.png );
@@ -452,6 +456,7 @@ footer select{
     font-size: 13px;
 }
 
+
 .top-text{
     margin-top: 60px;
     margin-left: 40px;
@@ -460,8 +465,4 @@ footer select{
 .foot-ers a:hover{
     text-decoration: underline;
 }
-
-
- 
-
 
