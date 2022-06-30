@@ -457,8 +457,6 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    
-    flex-wrap:wrap;
 }
  
  .fcolumn{
@@ -468,6 +466,7 @@ footer {
     margin-left: 40px;
     margin-top: 15px;
     margin-bottom: 10px;
+    
 }
 
 .top-text,
@@ -487,7 +486,7 @@ footer a {
 }
 
 .fcolumn li a{
-    font-size:14px;
+    font-size:13px;
 }
 
 footer select{
@@ -700,3 +699,19 @@ footer select{
 
 }
 
+@media screen and (max-width:740px) {
+    
+    .content-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .content-footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    
+}
+}
