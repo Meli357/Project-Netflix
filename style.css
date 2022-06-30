@@ -1,6 +1,6 @@
 @font-face {
     font-family: Netflix Sans;
-    src: url(assets/css/Fonts/NetflixSansRegular.ttf);
+    src: url(assets/Fonts/CSS/NetflixSansRegular.ttf);
 }
 
 
@@ -11,14 +11,15 @@ header {
     background-size: cover;
     padding: 30px;
     border-bottom: 8px solid #222;
-
-
+   
+    
 }
 
 .header-box {
     width: 100%;
     height: 650px;
     padding: 100px;
+    display: block;
     align-items: center;
     justify-items: center;
 }
@@ -30,24 +31,24 @@ header {
     justify-content: right;
     gap: 1rem;
     float: right;
-    align-items: center;
+    align-items: center;    
 }
 
 
 
-.Language {
+ .Language {
     background-color: black;
     width: 95px;
     height: 39px;
     text-align: right;
-    background-image: url(https://coothead.co.uk/images/world.png );
+    background-image: url( https://coothead.co.uk/images/world.png );
     background-repeat: no-repeat;
     background-position: 8%;
     background-size: 13px;
-    border-color: rgb(59, 59, 54);
+    border-color:rgb(59, 59, 54);
 
 
-}
+ }
 
 
 .Inizia:hover {
@@ -71,16 +72,16 @@ header {
 
 
 
-.header-box h1 {
+h1 {
     margin-top: 100px;
     font-family: Netflix Sans;
     font-size: 90px;
     color: white;
     text-align: center;
-
-
-
-
+    
+    
+    
+    
 }
 
 h4 {
@@ -90,9 +91,9 @@ h4 {
     color: white;
     text-align: center;
     padding: 25px;
-
-
-
+    
+    
+    
 }
 
 h6 {
@@ -104,21 +105,21 @@ h6 {
 }
 
 
-.input-email-section {
-
+.input-email-section  {
+    
     padding: 25px;
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: center;
-
-
+    
+    
 }
 
 .input-email {
-
+    
     width: 450px;
-    height: 65px;
-    color: #333;
+    height: 65px;  
+    color:#333;
     border: none;
 }
 
@@ -131,12 +132,23 @@ h6 {
     font-size: 28px;
     font-weight: lighter;
     font-family: Netflix Sans;
-    color: #333;
+    color:#333;
     color: white;
-    background-color: rgba(220, 0, 0, 1);
+    background-color:rgba(220, 0, 0, 1);
     border: none;
 }
 
+
+header {
+    max-width: 100%;
+}
+
+@media all and (max-width: 880px) and (min-width: 300px) {
+    .header-box {
+        display: inline;  
+    }
+
+}
 
 
 * {
@@ -315,6 +327,11 @@ div.immagine2 {
     width: 800px;
     padding: 22px;
     text-align: left;
+    
+}
+.faq-btn, svg{
+    cursor: pointer;
+
 }
 
 .section-custom h1 {
@@ -376,15 +393,27 @@ section ul {
     display: flex;
     flex-direction: column;
 }
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+i{
+    background-color: transparent;
+    margin-left: 20px;
+}
+
 
 .btn-email {
     border: 0;
     line-height: 2.5;
-    padding: 0 20px;
+    height: 65px;
     font-size: 25px;
     text-align: center;
     color: #fff;
     background-color: rgba(220, 0, 0, 1);
+    
 }
 
 .btn-email:hover {
@@ -396,19 +425,21 @@ section ul {
         inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-.form {
-    display: flex;
-    margin: 10px;
-    align-items: center;
-}
 
 .form input {
     width: 450px;
     height: 65px;
-
-    color: #333;
-    font-size: 24px;
+    color:#333;
+    font-size: 14px;
+    padding-left: 2%;
     background-color: #fff;
+}
+    
+.form{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .form button {
@@ -417,20 +448,25 @@ section ul {
 }
 
 @media all and (max-width: 880px) {
-
+  .form input{
+        margin-bottom: 2%;
+    }
 
     .form {
         flex-direction: column;
-
     }
 
     .faq-btn {
         width: 85vw;
         margin-left: 8%;
+    } 
+    
+    .btn-email{
+        width: 45px;
+        font-size: 16px;
+        line-height: 1.5; 
     }
 }
-
-;
 
 @media all and (max-width:460px) {
     .div-email {
@@ -552,9 +588,9 @@ footer select{
     .immagine1 img,
     .immagine2 img,
     .immagine3 img,
-    .immagine4 img {
-        max-width: 650px;
-        max-height: 450px;
+    .immagine4 img{
+        max-width: 467px;
+        max-height: auto;
         position: relative;
     }
 
@@ -568,9 +604,9 @@ footer select{
         align-items: center;
     }
 
-    .immagine3 video {
-        width: 379px;
-        margin: -80px 96px 60px 85px;
+    .immagine3 video{
+        width: 285px;
+        margin: -80px 96px 50px 85px;
     }
 
     .titoli,
@@ -581,7 +617,7 @@ footer select{
         text-align: center;
         width: 100%;
         padding: 0;
-        margin: 0 0 -30px 0;
+        margin: 0 0 -20px 0;
         z-index: 4;
     }
 
