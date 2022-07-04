@@ -32,31 +32,29 @@ header {
     gap: 1rem;
     float: right;
     align-items: center;    
+
+    position:relative;
 }
-
-
 
  .Language {
     background-color: black;
     width: 95px;
     height: 39px;
-    text-align: right;
+    text-align:center;
+     margin-left: 10px;
+    
+    /*
     background-image: url( https://coothead.co.uk/images/world.png );
     background-repeat: no-repeat;
     background-position: 8%;
     background-size: 13px;
     border-color:rgb(59, 59, 54);
-
-
+*/
  }
-
 
 .Inizia:hover {
     background-color: rgba(255, 0, 0, 1);
 }
-
-
-
 
 .accedi {
     background-color: rgba(220, 0, 0, 1);
@@ -70,12 +68,32 @@ header {
 
 }
 
+header select{
+    display:block;
+    appearance: none;
+}
+
+.nav-buttons > .globe1{
+    transform: scale(30%);
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+
+.nav-buttons > .caret1{
+    transform: scale(10%);
+    position: absolute;
+    right:12px;
+}
+
 
 
 .header-box h1 {
     margin-top: 100px;
     font-family: Netflix Sans;
-    font-size: 90px;
+    font-size: 55px;
     color: white;
     text-align: center;
     
@@ -87,7 +105,7 @@ header {
 h4 {
     font-family: Netflix Sans;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 23px;
     color: white;
     text-align: center;
     padding: 25px;
@@ -99,7 +117,7 @@ h4 {
 h6 {
     font-family: Netflix Sans;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     text-align: center;
 }
@@ -471,11 +489,20 @@ i{
         font-size: 16px;
         line-height: 1.5; 
     }
+
+    .form button{        
+        width: 120px;        
+        height: 50px;    }
 }
 
 @media all and (max-width:460px) {
     .div-email {
         width: 50%;
+
+    }
+
+    .btn-email{
+        width: 20px;
     }
 
 }
@@ -490,8 +517,16 @@ footer {
 }
 
 .foot-ers {
+    
     margin: 0 auto;
-    max-width: 990px;
+    width:950px;
+
+    display:flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .content-footer {
@@ -504,6 +539,7 @@ footer {
 
     flex-grow: 1;
     justify-content: center;
+    
     margin-left: 40px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -531,14 +567,43 @@ footer a {
 }
 
 footer select{
+
+    display: block;
+    background-size: 30px;
+    border-color:rgb(59, 59, 54);
+    appearance: none;  
+
+    /*
     background-image: url( https://coothead.co.uk/images/world.png );
 	background-repeat: no-repeat;
     background-size: 20px;
     background-position:10% 55%;
     
 
-    border-color:rgb(59, 59, 54);
+    border-color:rgb(59, 59, 54);*/
 }
+/*plus*/
+.opt-foot{
+    display: inline-flex;
+    position: relative;
+}
+.opt-foot > .globe{
+    transform: scale(40%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 30px;
+}
+.opt-foot > .caret{
+    transform: scale(30%);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    left: 120px;
+}
+/*plus*/
 
 #dropdown-foot{
     background-color: rgb(0, 0, 0);
@@ -549,6 +614,9 @@ footer select{
     padding-left: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
+
+    height: 50px;
+    padding-right: 40px;
 }
 
 .bot-text{
